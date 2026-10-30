@@ -2,7 +2,7 @@
 
 Copyright 2026 Karl. All rights reserved except as expressly granted below.
 
-Karl grants you permission to install and use the self-owned software distributed under these terms free of charge for personal, noncommercial purposes. Commercial use requires Karl's prior written permission. Commercial use includes use within a company or other organization for its internal operations, whether or not a fee is charged. Contact Karl through the repository owner to request permission.
+Karl grants you permission to install and use the self-owned software distributed under these terms free of charge for noncommercial purposes. Commercial use requires Karl's prior written permission. Commercial use includes use within a company or business for its internal operations, whether or not a fee is charged. Contact Karl through the repository owner to request permission.
 
 This license does not grant permission to redistribute, sublicense, modify, or create derivative works of the self-owned software. All rights not expressly granted are reserved.
 
