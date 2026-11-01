@@ -1,5 +1,7 @@
 # Handheld Hardware Monitor
 
+> **Pre-release hold:** TrimUI installation can refuse the stock-launcher handoff and restore the previous application. Wait for the corrected release before installing 0.0.2.
+
 Version **0.0.2** provides compiled Display packages for the supported R36 and TrimUI installations. Python application roles, including the installer, are compiled with Nuitka; first-party JavaScript is minified and mangled. This public repository contains release packages, installation instructions and version/license information.
 
 Karl’s software is free for noncommercial use. Commercial use, including internal company use, requires Karl’s prior written permission. See [LICENSE.md](LICENSE.md) and [third-party notices](THIRD-PARTY.md). Previously granted GPL rights remain effective.
