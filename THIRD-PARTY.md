@@ -1,6 +1,6 @@
 # Third-party notices
 
-Display 0.0.2 includes applicable license texts under `app/licenses` in each installation archive. Karl’s material is governed by [LICENSE.md](LICENSE.md); third-party terms apply independently and earlier GPL grants remain effective.
+Display 0.0.3 includes applicable license texts under `app/licenses` in each installation archive. Karl’s material is governed by [LICENSE.md](LICENSE.md); third-party terms apply independently and earlier GPL grants remain effective.
 
 | Package | Included components |
 | --- | --- |

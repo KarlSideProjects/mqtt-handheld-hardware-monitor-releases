@@ -1,12 +1,13 @@
 # Handheld Hardware Monitor
 
-> **Pre-release hold:** TrimUI installation can refuse the stock-launcher handoff and restore the previous application. Wait for the corrected release before installing 0.0.2.
 
-Version **0.0.2** provides compiled Display packages for the supported R36 and TrimUI installations. Python application roles, including the installer, are compiled with Nuitka; first-party JavaScript is minified and mangled. This public repository contains release packages, installation instructions and version/license information.
+Version **0.0.3** provides compiled Display packages for the supported R36 and TrimUI installations. Python application roles, including the installer, are compiled with Nuitka; first-party JavaScript is minified and mangled. This public repository contains release packages, installation instructions and version/license information.
 
 Karl’s software is free for noncommercial use. Commercial use, including internal company use, requires Karl’s prior written permission. See [LICENSE.md](LICENSE.md) and [third-party notices](THIRD-PARTY.md). Previously granted GPL rights remain effective.
 
-[Download both packages](https://github.com/KarlSideProjects/mqtt-handheld-hardware-monitor-releases/releases/tag/v0.0.2). [Version metadata](version.json) identifies the compiled source, archive hashes and installer manifest hashes. Installation uses the complete compiled package from this public release.
+Before installing, confirm the release is marked stable on its page. Pre-release packages are for validation.
+
+[Download both packages](https://github.com/KarlSideProjects/mqtt-handheld-hardware-monitor-releases/releases/tag/v0.0.3). [Version metadata](version.json) identifies the compiled source, archive hashes and installer manifest hashes. Installation uses the complete compiled package from this public release.
 
 ## Compatibility and preparation
 
@@ -18,23 +19,23 @@ Use a terminal with curl, gzip, tar and sha256sum. If curl is unavailable on the
 ## R36 installation
 
 ```sh
-curl --fail --location https://github.com/KarlSideProjects/mqtt-handheld-hardware-monitor-releases/releases/download/v0.0.2/display-r36-arm64-0.0.2.tar.gz --output display-r36-arm64-0.0.2.tar.gz
-printf '%s  display-r36-arm64-0.0.2.tar.gz\n' 'cb6c0d260156459483f21067219b22cb43cd1eb41ee25263dd45b26aaf6a78c3' | sha256sum --check -
+curl --fail --location https://github.com/KarlSideProjects/mqtt-handheld-hardware-monitor-releases/releases/download/v0.0.3/display-r36-arm64-0.0.3.tar.gz --output display-r36-arm64-0.0.3.tar.gz
+printf '%s  display-r36-arm64-0.0.3.tar.gz\n' '16e311e81bf0e844e41b880da26592fb52ecf44653160f3b39fefd84953f6deb' | sha256sum --check -
 bundle=$(mktemp -d)
-gzip -dc display-r36-arm64-0.0.2.tar.gz | tar -xf - -C "$bundle"
+gzip -dc display-r36-arm64-0.0.3.tar.gz | tar -xf - -C "$bundle"
 cd "$bundle"
-sh ./install-r36.sh --manifest-sha256 e1cf9df9db103a188033cdc17ecd0f3ed27dfcc1148ebc5cda8d86fe638b7b87
+sh ./install-r36.sh --manifest-sha256 39906281b2af9aeceb960b5136bb30ebe66ce20b1d059d9d4f0a6cf2f1604e91
 ```
 
 ## TrimUI installation
 
 ```sh
-curl --fail --location https://github.com/KarlSideProjects/mqtt-handheld-hardware-monitor-releases/releases/download/v0.0.2/display-trimui-arm64-0.0.2.tar.gz --output display-trimui-arm64-0.0.2.tar.gz
-printf '%s  display-trimui-arm64-0.0.2.tar.gz\n' '403cbf06ec76d6e0f66eb2aed84cdd6a82d8c230573fd17acb4832bc88a3b7a2' | sha256sum --check -
+curl --fail --location https://github.com/KarlSideProjects/mqtt-handheld-hardware-monitor-releases/releases/download/v0.0.3/display-trimui-arm64-0.0.3.tar.gz --output display-trimui-arm64-0.0.3.tar.gz
+printf '%s  display-trimui-arm64-0.0.3.tar.gz\n' 'a2002fe24cee407e394841b03f4c58d94ca10193e8ae2c6fe4106601c6699ca0' | sha256sum --check -
 bundle=$(mktemp -d)
-gzip -dc display-trimui-arm64-0.0.2.tar.gz | tar -xf - -C "$bundle"
+gzip -dc display-trimui-arm64-0.0.3.tar.gz | tar -xf - -C "$bundle"
 cd "$bundle"
-sh ./install-trimui.sh --manifest-sha256 5486efcdf5dd97f379d0cae28a05e369f500490ae6bb318f81f69844baa31279
+sh ./install-trimui.sh --manifest-sha256 682d014f5ee4fb7e19ff2e046fc8db977133caa525696501b01655defdc68583
 ```
 
 For a new MQTT configuration, after verifying and extracting the archive, run `./app/mqtt_setup.bin --output /absolute/private/path/new-config.json` in an interactive terminal. The output file must not exist. Add `--config /absolute/private/path/new-config.json` to the installer command. Keep this file private and outside this repository.
