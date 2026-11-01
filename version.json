@@ -1,0 +1,20 @@
+{
+  "version": "0.0.2",
+  "source_commit": "fe827547624fe40c529d0de24521e6ba14b6f83f",
+  "platforms": {
+    "r36": {
+      "archive": "display-r36-arm64-0.0.2.tar.gz",
+      "sha256": "cb6c0d260156459483f21067219b22cb43cd1eb41ee25263dd45b26aaf6a78c3",
+      "manifest_sha256": "e1cf9df9db103a188033cdc17ecd0f3ed27dfcc1148ebc5cda8d86fe638b7b87",
+      "source_commit": "fe827547624fe40c529d0de24521e6ba14b6f83f",
+      "version": "0.0.2"
+    },
+    "trimui": {
+      "archive": "display-trimui-arm64-0.0.2.tar.gz",
+      "sha256": "403cbf06ec76d6e0f66eb2aed84cdd6a82d8c230573fd17acb4832bc88a3b7a2",
+      "manifest_sha256": "5486efcdf5dd97f379d0cae28a05e369f500490ae6bb318f81f69844baa31279",
+      "source_commit": "fe827547624fe40c529d0de24521e6ba14b6f83f",
+      "version": "0.0.2"
+    }
+  }
+}
