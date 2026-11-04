@@ -1,20 +1,20 @@
 {
   "platforms": {
     "r36": {
-      "archive": "display-r36-arm64-0.0.14.tar.gz",
-      "manifest_sha256": "e4ee2d5184d45f2a9ecca130470940a86e543454acf2298f9ca134d538ca7dfd",
-      "sha256": "a5c249640f4c31dc9acce557272828a6a8dee4547a6d45590a1861c08fa3c051",
-      "source_commit": "bd6f426260ea0e09d1ca5d35275fe4227df51982",
-      "version": "0.0.14"
+      "archive": "display-r36-arm64-0.0.15.tar.gz",
+      "manifest_sha256": "edf8980fa5eaba1868455bcf5d910ba0118b01de28b31f7d88ef9936b1964e84",
+      "sha256": "35b8b03448534840b795913eba27af7a2a63b124c26b08d21d6c7f800377cd05",
+      "source_commit": "f4f287b05f99eb52bac799b21aef6afa4998f26d",
+      "version": "0.0.15"
     },
     "trimui": {
-      "archive": "display-trimui-arm64-0.0.14.tar.gz",
-      "manifest_sha256": "23d3e4ca416a28dbf20fb8819c7b681bc1a9fae03354f9863f3d9e9ee833a533",
-      "sha256": "a453c5c51107a21abd94f56f31c7a1a2c626aa81be1e430aa953664550d2782a",
-      "source_commit": "bd6f426260ea0e09d1ca5d35275fe4227df51982",
-      "version": "0.0.14"
+      "archive": "display-trimui-arm64-0.0.15.tar.gz",
+      "manifest_sha256": "99f20db4bcff425f48c1fffcab322f5923603c43e8dd71139015803a9310d828",
+      "sha256": "e7dc78a21d0a9b95bbc72704370e943aa6b025ab4dfc55657091140a51d2127f",
+      "source_commit": "f4f287b05f99eb52bac799b21aef6afa4998f26d",
+      "version": "0.0.15"
     }
   },
-  "source_commit": "bd6f426260ea0e09d1ca5d35275fe4227df51982",
-  "version": "0.0.14"
+  "source_commit": "f4f287b05f99eb52bac799b21aef6afa4998f26d",
+  "version": "0.0.15"
 }
